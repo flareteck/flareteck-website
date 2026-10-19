@@ -8,6 +8,10 @@
     <title>FLARETECK | Innovation and Concepts</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -16,6 +20,7 @@
             text-align: center;
         }
 
+        /* Company Header */
         .site-header {
             display: flex;
             align-items: center;
@@ -27,13 +32,18 @@
             text-align: left;
         }
 
+        /* Small Company Logo */
         .company-logo {
+            display: block;
             width: 30px;
             height: 30px;
-            max-width: 30px;
-            max-height: 30px;
             object-fit: contain;
             flex-shrink: 0;
+        }
+
+        /* Company Name and Text */
+        .company-info {
+            min-width: 0;
         }
 
         .company-info h1 {
@@ -47,14 +57,24 @@
             font-size: 14px;
         }
 
+        /* Main Content */
         main {
+            max-width: 1000px;
+            margin: 0 auto;
             padding: 40px 20px 60px;
+            line-height: 1.7;
         }
 
         h2 {
             color: #167c66;
+            margin-top: 30px;
         }
 
+        main a {
+            color: #167c66;
+        }
+
+        /* Footer */
         footer {
             background: #10243a;
             color: white;
@@ -65,6 +85,7 @@
             margin: 0;
         }
 
+        /* Mobile Layout */
         @media (max-width: 600px) {
             .site-header {
                 padding: 15px;
@@ -72,8 +93,8 @@
             }
 
             .company-logo {
-                width: 45px;
-                height: 45px;
+                width: 30px;
+                height: 30px;
             }
 
             .company-info h1 {
@@ -83,6 +104,11 @@
 
             .company-info p {
                 font-size: 11px;
+                line-height: 1.5;
+            }
+
+            main {
+                padding: 25px 15px 40px;
             }
         }
     </style>
@@ -91,15 +117,23 @@
 <body>
 
     <header class="site-header">
-       
+
+        <img
+            src="logo-flareteck.jpg"
+            alt="FLARETECK Logo"
+            class="company-logo"
+        >
+
         <div class="company-info">
             <h1>FLARETECK</h1>
             <p>INNOVATION AND CONCEPTS</p>
             <p>Engineering Design | Product Development</p>
         </div>
+
     </header>
 
     <main>
+
         <h2>Welcome to FLARETECK</h2>
 
         <p>
@@ -110,14 +144,19 @@
         <h2>Our Capabilities</h2>
 
         <p>
-            Mechanical Design | Product Development |
-            Manufacturing | Quality Inspection
+            Mechanical Design |
+            Product Development |
+            Manufacturing |
+            Quality Inspection
         </p>
 
         <p>
             Website:
-            <a href="https://flareteck.com">flareteck.com</a>
+            <a href="https://flareteck.com">
+                flareteck.com
+            </a>
         </p>
+
     </main>
 
     <footer>
