@@ -22,25 +22,27 @@
 
         /* Company Header */
         .site-header {
-            ddisplay: flex;
+            display: flex;
+            flex-direction: row;
             align-items: center;
-            gap: 15px;
+            justify-content: flex-start;
+            gap: 20px;
             background: #10243a;
             color: white;
-            padding: 18px 30px;
+            padding: 20px 35px;
             text-align: left;
         }
 
-        /* Small Company Logo */
+        /* Company Logo */
         .company-logo {
             display: block;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             object-fit: contain;
             flex-shrink: 0;
         }
 
-        /* Company Name and Text */
+        /* Company Information */
         .company-info {
             min-width: 0;
         }
@@ -73,6 +75,13 @@
             color: #167c66;
         }
 
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
         /* Footer */
         footer {
             background: #10243a;
@@ -92,8 +101,8 @@
             }
 
             .company-logo {
-                width: 30px;
-                height: 30px;
+                width: 45px;
+                height: 45px;
             }
 
             .company-info h1 {
@@ -115,24 +124,21 @@
 
 <body>
 
-    
-<header class="site-header">
-    <img
-        src="https://flareteck.github.io/flareteck-website/logo-flareteck.jpg"
-        alt="FLARETECK Logo"
-        class="company-logo"
-    >
+    <header class="site-header">
+        <img
+            src="logo-flareteck.jpg"
+            alt="FLARETECK Logo"
+            class="company-logo"
+        >
 
-    <div class="company-info">
-        <h1>FLARETECK</h1>
-        <p>INNOVATION AND CONCEPTS</p>
-        <p>Engineering Design | Product Development</p>
-    </div>
-</header>
-
+        <div class="company-info">
+            <h1>FLARETECK</h1>
+            <p>INNOVATION AND CONCEPTS</p>
+            <p>Engineering Design | Product Development</p>
+        </div>
+    </header>
 
     <main>
-
         <h2>Welcome to FLARETECK</h2>
 
         <p>
@@ -149,16 +155,15 @@
             Quality Inspection
         </p>
 
-        <p>
-            Website:
+        <div class="contact-links">
             <a href="https://www.flareteck.com">
                 www.flareteck.com
             </a>
-            <a href="Email: flareteck@gmail.com">
-                
-            </a>
-        </p>
 
+            <a href="mailto:flareteck@gmail.com">
+                flareteck@gmail.com
+            </a>
+        </div>
     </main>
 
     <footer>
