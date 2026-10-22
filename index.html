@@ -1,152 +1,59 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>FLARETECK | Innovation and Concepts</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #FFFDE7;
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            color: #111;
-        }
-
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            padding: 0 15px 20px 0;
-        }
-
-        .brand h1 {
-            margin: 0;
-            color: green;
-            font-size: clamp(28px, 4vw, 48px);
-        }
-
-        .brand p {
-            margin: 4px 0 0;
-            font-size: clamp(16px, 2vw, 25px);
-        }
-
-        .logo {
-            width: 110px;
-            max-width: 25%;
-            height: auto;
-            object-fit: contain;
-        }
-
-        .introduction {
-            text-align: center;
-            font-size: clamp(16px, 2vw, 25px);
-            margin: 10px 0;
-        }
-
-        .product-image {
-            display: block;
-            width: 300px;
-            max-width: 90%;
-            height: 300px;
-            object-fit: contain;
-            margin: 5px auto;
-        }
-
-        .contact {
-            text-align: center;
-            font-size: clamp(16px, 2vw, 24px);
-        }
-
-        .contact p {
-            margin: 8px 0;
-            overflow-wrap: anywhere;
-        }
-
-        .contact-title {
-            color: darkgreen;
-        }
-
-        @media (max-width: 480px) {
-            body {
-                margin: 12px;
-            }
-
-            .header {
-                padding-right: 0;
-            }
-
-            .logo {
-                width: 75px;
-            }
-
-            .product-image {
-                height: 280px;
-            }
-        }
-    </style>
 </head>
 
-<body>
+<body style="background-color: #FFFDE7; font-family: Arial, sans-serif; margin: 20px;">
 
     <!-- Header -->
-    <header class="header">
-        <div class="brand">
-            <h1>FLARETECK</h1>
-            <p>Innovation and Concepts</p>
+    <div style="display: flex; align-items: center; justify-content: space-between; padding-right: 50px;">
+        <div>
+            <h1 style="margin-bottom: 0; color: green;">FLARETECK</h1>
+            <p style="margin-top: 0;">Innovation and Concepts</p>
         </div>
 
         <img src="./untitled.png"
              alt="FLARETECK Logo"
-             class="logo">
-    </header>
+             width="90"
+             style="display: block; object-fit: contain;">
+    </div>
 
     <hr>
-
     <!-- Company Introduction -->
-    <main>
-        <div class="introduction">
+    <div style="text-align: center;">
+        <p>
             Meeting the Requirements of Medical Industry.<br>
             We deal in manufacturing and supply of high-quality
             Vials, Tubes, Containers and Other Consumables.
-        </div>
+        </p>
 
         <!-- Medical Tube Image -->
-        <img src="./tube.png"
-             alt="Medical tubes and containers"
-             class="product-image">
-    </main>
+        <div style="display: flex; justify-content: center; gap: 5px;">
+            <img src="./tube.png"
+                 alt="Medical Tube"
+                 style="width: 250px; height: 250px; object-fit: contain;">
+        </div>
+    </div>
 
     <hr>
 
     <!-- Contact Information -->
-    <footer class="contact">
-        <p class="contact-title">
+    <div style="text-align: center;">
+        <p style="margin: 0 0 10px; color: darkgreen;">
             Contact for more information
         </p>
-
-        <p><u>MOB: 9900981517</u></p>
-
-        <p>
-            <a href="mailto:flareteck@gmail.com" style="color: inherit;">
-                flareteck@gmail.com
-            </a>
-            |
-            <a href="https://flareteck.com" style="color: inherit;">
-                www.flareteck.com
-            </a>
+        <p style="margin: 5px 0;">
+            <u>MOB: 9900981517</u>
         </p>
-
-        <p>Bangalore - India</p>
-    </footer>
-
+        <p style="margin: 5px 0;">
+            flareteck@gmail.com | www.flareteck.com
+        </p>
+        <p style="margin: 5px 0;">
+            Bangalore - India
+        </p>
+    </div>
 </body>
 </html>
-```
